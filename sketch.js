@@ -2,6 +2,7 @@ let sizeOfTriangle_input
 
 function setup() {
   createCanvas(400, 400);
+  sizeOfTriangle_input = createInput();
 }
 
 function draw() {
@@ -23,4 +24,6 @@ function designStuff(){
   textFont("impact")
   text("I will draw a triangle, how big,\n shall I make it?",50,100)
   pop()
+  sizeOfTriangle_input.position(50,150)
+  
 }
