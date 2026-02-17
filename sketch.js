@@ -11,11 +11,18 @@ function draw() {
   designStuff();
   buttonStuff()
 }
+function drawTriangle(){
+  for(i=0;i<5;i++){
+    console.log(i)
+  }
+}
 function buttonStuff(){
   push();
+  draw_button.mousePressed(drawTriangle)
+  draw_button.size(75,20)
   draw_button.style('background-color','#FF9F1C')
   draw_button.style('font-family','impact')
-  draw_button.position(50,250)
+  draw_button.position(200,150)
   pop();
   
 }
