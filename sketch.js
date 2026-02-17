@@ -1,13 +1,23 @@
 let sizeOfTriangle_input
+let draw_button;
 
 function setup() {
   createCanvas(400, 400);
   sizeOfTriangle_input = createInput();
+  draw_button = createButton("press")
 }
-
 function draw() {
   background("#2EC4B6");
   designStuff();
+  buttonStuff()
+}
+function buttonStuff(){
+  push();
+  draw_button.style('background-color','#FF9F1C')
+  draw_button.style('font-family','impact')
+  draw_button.position(50,250)
+  pop();
+  
 }
 
 function designStuff(){
