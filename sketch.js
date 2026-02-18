@@ -1,12 +1,11 @@
 let sizeOfTriangle_input;
 let draw_button;
 let output;
-
 function setup() {
   createCanvas(400, 400);
   sizeOfTriangle_input = createInput();
   draw_button = createButton("press");
-  output = "x";
+  output = "";
 }
 function draw() {
   background("#2EC4B6");
@@ -17,8 +16,7 @@ function draw() {
 
 function drawTriangle(){
   for(i=0;i<1;i++){
-    text("*",50,200)
-    console.log("*")
+    output = "*"
   }
 }
 function buttonStuff(){
