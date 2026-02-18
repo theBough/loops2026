@@ -15,9 +15,14 @@ function draw() {
 }
 
 function drawTriangle(){
-  for(i=0;i<1;i++){
-    output = "*"
+  for(let j = 0; j<7; j++){
+    for(let i=0;i<5;i++){
+      //this will draw a row
+      output += "*"
+    }
+    output += "\n"
   }
+  
 }
 function buttonStuff(){
   push();
