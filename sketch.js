@@ -15,8 +15,9 @@ function draw() {
 }
 
 function drawTriangle(){
-  for(let j = 0; j<7; j++){
-    for(let i=0;i<5;i++){
+  let size = int(sizeOfTriangle_input.value()) +1
+  for(let j = 0; j< size; j++){
+    for(let i=0;i<j; i++){
       //this will draw a row
       output += "*"
     }
