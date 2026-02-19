@@ -1,10 +1,11 @@
 let sizeOfTriangle_input;
-let draw_button;
+let draw_button , draw_diamond;
 let output;
 function setup() {
   createCanvas(400, 400);
   sizeOfTriangle_input = createInput();
-  draw_button = createButton("press");
+  draw_button = createButton("draw Triangle");
+  draw_diamond = createButton("draw diamond");
   output = "";
 }
 function draw() {
@@ -28,10 +29,13 @@ function drawTriangle(){
 function buttonStuff(){
   push();
   draw_button.mousePressed(drawTriangle);
-  draw_button.size(75,20);
+  //draw_button.size(75,20);
   draw_button.style('background-color','#FF9F1C');
+  draw_diamond.style('background-color','#FF9F1C');
   draw_button.style('font-family','impact');
+  draw_diamond.style('font-family','impact');
   draw_button.position(200,150);
+  draw_diamond.position(200,175);
   pop(); 
 }
 function designStuff(){
