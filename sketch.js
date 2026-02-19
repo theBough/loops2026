@@ -15,6 +15,19 @@ function draw() {
   text(output , 50,200)
 }
 
+function drawDiamond(){
+  let size = int(sizeOfTriangle_input.value()) *2
+  console.log(size)
+  for(let i = 0; i<size ; i++){
+    console.log(i % 2)
+    if(i % 2 == 0){
+      //it is even
+      output += "*";
+    }else{
+      output += " ";
+    }
+  }
+}
 function drawTriangle(){
   let size = int(sizeOfTriangle_input.value()) +1
   for(let j = 0; j< size; j++){
@@ -29,6 +42,7 @@ function drawTriangle(){
 function buttonStuff(){
   push();
   draw_button.mousePressed(drawTriangle);
+  draw_diamond.mousePressed(drawDiamond);
   //draw_button.size(75,20);
   draw_button.style('background-color','#FF9F1C');
   draw_diamond.style('background-color','#FF9F1C');
