@@ -16,6 +16,7 @@ function draw() {
 }
 
 function drawDiamond(){
+  output = ""
   let size = int(sizeOfTriangle_input.value()) *2
   console.log(size)
   for(let i = 0; i<size ; i++){
