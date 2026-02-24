@@ -21,11 +21,11 @@ function drawDiamondAgain(){
   let thisInput = int(sizeOfTriangle_input.value())
   //draw the top half of the diamond
   for(let j = 0; j < thisInput; j++){
-    for( let i = 0 ; i < thisInput - j + 1 ; i++){
+    for( let i = 0 ; i < thisInput - (j + 1) ; i++){
       //this loop is handling our ' 's 
       output += " "
     }
-    for( let i =0 ;  i < j+1 ; i++){
+    for( let i =0 ;  i < (j+1) ; i++){
       //this loop is going to handle our '*'s
       output += "* "
     }
@@ -34,11 +34,11 @@ function drawDiamondAgain(){
   
   //draw the bottom half of the diamond
   for(let j = 0; j < thisInput; j++){
-    for( let i = 0 ; i <j+1 ;  i++){
+    for( let i = 0 ; i <(j+1) ;  i++){
       //this loop is handling our ' 's 
       output += " "
     }
-    for( let i =0 ;  i < thisInput - j + 1 ; i++){
+    for( let i =0 ;  i < thisInput - (j +1); i++){
       //this loop is going to handle our '*'s
       output += "* "
     }
