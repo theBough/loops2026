@@ -45,20 +45,6 @@ function drawDiamondAgain(){
     output += "\n"
   }
 }
-function drawDiamond(){
-  output = ""
-  let size = int(sizeOfTriangle_input.value()) *2
-  console.log(size)
-  for(let i = 0; i<size ; i++){
-    console.log(i % 2)
-    if(i % 2 == 0){
-      //it is even
-      output += "*";
-    }else{
-      output += " ";
-    }
-  }
-}
 function drawTriangle(){
   let size = int(sizeOfTriangle_input.value()) +1
   for(let j = 0; j< size; j++){
