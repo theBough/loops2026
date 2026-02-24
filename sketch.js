@@ -15,6 +15,23 @@ function draw() {
   text(output , 50,200)
 }
 
+function drawDiamondAgain(){
+  output = ""
+  //get the number from the input box
+  let thisInput = int(sizeOfTriangle_input.value())
+  
+  for(let j = 0; j < thisInput; j++){
+    for( let i = 0 ; i < thisInput - j + 1 ; i++){
+      //this loop is handling our ' 's 
+      output += " "
+    }
+    for( let i =0 ;  i < j+1 ; i++){
+      //this loop is going to handle our '*'s
+      output += "* "
+    }
+    output += "\n"
+  }
+}
 function drawDiamond(){
   output = ""
   let size = int(sizeOfTriangle_input.value()) *2
@@ -43,7 +60,7 @@ function drawTriangle(){
 function buttonStuff(){
   push();
   draw_button.mousePressed(drawTriangle);
-  draw_diamond.mousePressed(drawDiamond);
+  draw_diamond.mousePressed(drawDiamondAgain);
   //draw_button.size(75,20);
   draw_button.style('background-color','#FF9F1C');
   draw_diamond.style('background-color','#FF9F1C');
